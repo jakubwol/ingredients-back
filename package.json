@@ -1,0 +1,27 @@
+{
+  "name": "ingredients-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jakubwol/ingredients-back.git"
+  },
+  "author": "Jakub Wołowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakubwol/ingredients-back/issues"
+  },
+  "homepage": "https://github.com/jakubwol/ingredients-back",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongodb": "^3.1.0-beta4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.4"
+  }
+}
