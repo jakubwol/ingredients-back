@@ -1,13 +1,14 @@
 module.exports = function(app, db) {
     
-    app.get('/ingredients', (req, res) => {
-        res.send([]); 
+    app.use(function(req, res, next) {
+        res.header("Access-Control-Allow-Origin", "*");
+        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+        next();
     });
     
     app.post('/ingredients', (req, res) => {
         var reqList = req.body.list,
             resList = [];
-        console.log(reqList);
         for (i = 0; i < reqList.length; i++) {
             resList[i] = {
                 ingredient: reqList[i],
